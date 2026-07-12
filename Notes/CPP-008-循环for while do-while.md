@@ -1,0 +1,1 @@
+学了三种循环，while（条件判断）{}，for（int i=1；i<=a;i++){},do-while和while的区别就是不管符不符合条件，都会先执行一次。而且do{}while（）；while括号后面有分号
