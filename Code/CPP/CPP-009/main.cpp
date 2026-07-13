@@ -12,11 +12,11 @@ int main(){
     cin>>a;
     cout<<"请输入第二个数：";
     cin>>b;
-    cout<<a<<"+"<<b<<"="<<add(a,b)<<endl;
-     cout<<a<<"-"<<b<<"="<<diff(a,b)<<endl;
-      cout<<a<<"*"<<b<<"="<<product(a,b)<<endl;
-       cout<<a<<"/"<<b<<"="<<quotient(a,b)<<endl;
-        cout<<a<<"%"<<b<<"="<<remainder(a,b)<<endl;
+cout<<a<<"+"<<b<<"="<<add(a,b)<<endl;
+cout<<a<<"-"<<b<<"="<<diff(a,b)<<endl;
+cout<<a<<"*"<<b<<"="<<product(a,b)<<endl;
+cout<<a<<"/"<<b<<"="<<quotient(a,b)<<endl;
+cout<<a<<"%"<<b<<"="<<remainder(a,b)<<endl;
     return 0;
 }
 int add(int x,int y){
