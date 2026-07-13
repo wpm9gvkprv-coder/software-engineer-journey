@@ -1,0 +1,1 @@
+学了switch，注意不要忘记加break
