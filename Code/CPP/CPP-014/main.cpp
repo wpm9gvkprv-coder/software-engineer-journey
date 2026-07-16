@@ -1,17 +1,22 @@
 ﻿#include <iostream>
 int main() {
-    // 栈：自动管理
-    for (int i = 0; i < 5; i++) {
-        int stackVar = i;        // 每次循环进来创建，出去销毁
-        std::cout << "栈: " << stackVar << std::endl;
+    int n;
+    std::cout << "你想输入几个分数？";
+    std::cin >> n;
+    
+    int* scores = new int[n];   // 运行期决定大小！
+    for (int i = 0; i < n; i++) {
+        std::cout << "分数 " << i+1 << ": ";
+        std::cin >> scores[i];
     }
-    // 这里 stackVar 已经没了
     
-    // 堆：手动管理
-    int* p = new int(42);        // 在堆上分配一个 int，值为 42
-    std::cout << "堆: " << *p << std::endl;
-    delete p;                    // 手动释放——还仓库
-    // delete 之后 *p 就是非法访问了
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += scores[i];
+    }
+    std::cout << "平均分: " << (double)sum / n << std::endl;
     
+    delete[] scores;   // 用完释放
     return 0;
 }
+
